@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrawRandomImage</title>
+    <link rel="stylesheet" href="../css/style-index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="login-form.html">
+                <button>LOGIN</button>
+            </a>
+            <a href="reg-form.html">
+                <button>REGISTER</button>
+            </a>
+        </nav>
+        <h1>Draw Random Image</h1> 
+       <p>My collection of animal images to inspire your drawing. Click DRAW to see a random image and start sketching.</p>
+       
+    </header>
+    <main>
+        <div id="drawOptions">
+            <form>
+                <div>
+                    <div id="imgSet">
+                        <label for="quantity">How many images do you want to draw.</label>
+                        <input type="number" id="quantity" min="1" max="5" placeholder="5" required><br>
+
+                        <label for="drawTime">How long do you want to see the images.</label>
+                        <input type="number" id="drawTime" min="1" max="60" placeholder="min" required><br>
+                    </div>
+                    <div>
+                        <label for="randFlip">Do you want to add random rotation to the images.</label>
+                        <input type="checkbox" id="randFlip"><br>
+
+                        <label for="allFlip">Flip the image upside down </label>
+                        <input type="checkbox" id="allFlip"><br>
+                    </div>
+                    
+                </div>
+                
+                <div id="drawbttn">
+                    <button>DRAW</button>
+                </div>
+                
+            </form>
+        </div>
+        <div id="registerMessage">
+            <p>Join to build your personal drawing archive. Upload your artwork and view it alongside the inspiration.</p>
+            <button>REGISTER</button>
+        </div>
+    </main>
+    <footer>
+        <p>
+            This site is a fun personal project I created to help with drawing practice. The images come from random sources across the web.
+            <br>
+            I do not own the rights to any of them and do not claim ownership. All rights belong to their respective creators.
+        </p>
+    </footer>
+</body>
+</html>
